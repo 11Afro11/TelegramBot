@@ -19,18 +19,16 @@ f.close()
 
 @bot.message_handler(commands=['start'])
 def send_photo(message):
-    bot.send_message(message.chat.id, 'Este es su cyberasistente Neoalfred. Puede usar: \n - clases\n - día de la semana\n - hora?\n - id?\n - gatete\n - ayuda\n   Espero ser de su agrado, para servirle. \n NOTA:  escriba SIEMPRE en minúscula. \n Cuando no entiendo algo, lo repito. ')
+    bot.send_message(message.chat.id, 'Este es su asistente personal. Puede preguntarme por su horario y que le mande un examen de la constitución española. \n Cuando no entiendo algo, lo repito. ')
 
 def recibe(messages):
     for m in messages:
         if m.content_type == "text":
             if m.text == "Hola":
-                bot.send_message(m.chat.id,"Hola Julia")
+                bot.send_message(m.chat.id,"Hola")
                 bot.send_message(m.chat.id,"\n¿Como estas?")
             elif m.text == "puedo llamarte al?":
                 bot.send_message(m.chat.id,"me la pela")
-            elif m.text == "yo he visto cosas que no creerias":
-                bot.send_message(m.chat.id,"atacar naves en llamas más allá de Orión... he visto rayos c brillar en la oscuridad cerca de la puerta de tanhaüser. Todos esos momentos se perderán en el tiempo como lágrimas en la lluvia. Hora de morir.")
             elif m.text == "te gusta el rock?":
                 bot.send_message(m.chat.id,"no tengo gustos, señor")
                 bot.send_message(m.chat.id,"Lo siento")
